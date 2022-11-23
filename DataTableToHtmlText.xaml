@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>844,2210.6666666666665</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>669.3333333333334,2355.3333333333335</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -108,7 +108,7 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="679.3333333333334,2146" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence sap:VirtualizedContainerService.HintSize="679.3333333333334,2290.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:GenericValue" Name="tableHTML" />
       <Variable x:TypeArguments="x:Int32" Name="index" />
@@ -241,10 +241,11 @@
         <InArgument x:TypeArguments="x:String">[HtmlText+"&lt;/table&gt;"]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Dear, &lt;br/&gt;&lt;br/&gt;Hi Carla, Gareth,&lt;br/&gt;&lt;br/&gt;&#xD;&#xA;&#xD;&#xA;Please find the consolidated data from 27th  October till 4th  November 2022-&#xD;&#xA;&lt;br/&gt;&lt;br/&gt;&quot;+HtmlText+&quot;&lt;br/&gt;&lt;br/&gt;Regards&lt;br/&gt;&lt;br/&gt;Contract Loading Bot&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="637.3333333333334,216.66666666666666" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="[&quot;Contract Loading Bot Daily Report &quot;+date.now.ToString(&quot;dd-MMM-yyyy&quot;)]" To="harmeet.wadhwa@coforge.com">
+    <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Dear, &lt;br/&gt;&lt;br/&gt;Hi Carla, Gareth,&lt;br/&gt;&lt;br/&gt;&#xA;&#xA;Please find the consolidated data from 27th  October till 4th  November 2022-&#xA;&lt;br/&gt;&lt;br/&gt;&quot;+HtmlText+&quot;&lt;br/&gt;&lt;br/&gt;Regards&lt;br/&gt;&lt;br/&gt;Contract Loading Bot&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="637.3333333333334,216.66666666666666" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="[&quot;Contract Loading Bot Daily Report &quot;+date.now.ToString(&quot;dd-MMM-yyyy&quot;)]" To="harmeet.wadhwa@coforge.com">
       <ui:SendOutlookMail.Files>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
       </ui:SendOutlookMail.Files>
     </ui:SendOutlookMail>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="637.3333333333334,104.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Test&quot;]" />
   </Sequence>
 </Activity>
